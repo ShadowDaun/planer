@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <Button
+        android:id="@+id/glav"
+        android:layout_width="310dp"
+        android:layout_height="310dp"
+        android:layout_marginBottom="376dp"
+        android:backgroundTint="#00FFFFFF"
+        android:textColor="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="171dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="70dp"
+        android:background="@color/white"
+        android:text="9"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="130sp"
+        app:layout_constraintEnd_toEndOf="@+id/glav"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/glav"
+        app:layout_constraintTop_toTopOf="@+id/glav"
+        tools:text="9" />
+
+    <TextView
+        android:id="@+id/mes"
+        android:layout_width="249dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:text="Январь"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="@+id/glav"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/glav"
+        app:layout_constraintTop_toBottomOf="@+id/data" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="409dp"
+        android:layout_height="374dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="356dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
